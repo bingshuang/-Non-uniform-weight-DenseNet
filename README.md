@@ -1,10 +1,6 @@
 <div align="center">    
  
-# Handwritten Mathematical Expression Recognition with Bidirectionally Trained Transformer    
-
-[![arXiv](https://img.shields.io/badge/arXiv-2105.02412-b31b1b.svg)](https://arxiv.org/abs/2105.02412)
-
-[![Springer](https://badgen.net/badge/Springer/BTTR-paper/purple)](https://link.springer.com/chapter/10.1007%2F978-3-030-86331-9_37)
+# Handwritten Mathematical Expression Recognition with Non-uniform-weight DenseNet    
  
 </div>
  
@@ -15,21 +11,21 @@ Convert offline handwritten mathematical expression to LaTeX sequence using bidi
 First, install dependencies   
 ```bash
 # clone project   
-git clone https://github.com/Green-Wood/BTTR
+git clone https://github.com/bingshuang/-Non-uniform-weight-DenseNet
 
 # install project   
-cd BTTR
-conda create -y -n bttr python=3.7
-conda activate bttr
+cd NW_DenseNet
+conda create -y -n NW_DenseNet python=3.7
+conda activate NW_DenseNet
 conda install --yes -c pytorch pytorch=1.7.0 torchvision cudatoolkit=<your-cuda-version>
 pip install -e .   
  ```   
  Next, navigate to any file and run it. It may take **6~7** hours to coverage on **4** gpus using ddp.
  ```bash
 # module folder
-cd BTTR
+cd NW_DenseNet
 
-# train bttr model using 4 gpus and ddp
+# train NW_DenseNet model using 4 gpus and ddp
 python train.py --config config.yaml  
 ```
 
@@ -43,12 +39,12 @@ gpus: 1
 ## Imports
 This project is setup as a package which means you can now easily import any file into any other file like so:
 ```python
-from bttr.datamodule import CROHMEDatamodule
-from bttr import LitBTTR
+from NW_DenseNet.datamodule import CROHMEDatamodule
+from NW_DenseNet import NW_DenseNet
 from pytorch_lightning import Trainer
 
 # model
-model = LitBTTR()
+model = NW_DenseNet()
 
 # data
 dm = CROHMEDatamodule(test_year=test_year)
