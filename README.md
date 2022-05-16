@@ -68,18 +68,10 @@ For more accurate metrics:
 
 ### Citation   
 ```
-@article{zhao2021handwritten,
-  title={Handwritten Mathematical Expression Recognition with Bidirectionally Trained Transformer},
-  author={Zhao, Wenqi and Gao, Liangcai and Yan, Zuoyu and Peng, Shuai and Du, Lin and Zhang, Ziyin},
-  journal={arXiv preprint arXiv:2105.02412},
-  year={2021}
+@article{Jun Liu,
+  title={Design and Implementation of Exercise Annotation System Based on Handwritten Mathematical Formula Recognition},
+  author={Liu},
+  journal={},
+  year={2022}
 }
 ```
-```
-@inproceedings{Zhao2021HandwrittenME,
-  title={Handwritten Mathematical Expression Recognition with Bidirectionally Trained Transformer},
-  author={Wenqi Zhao and Liangcai Gao and Zuoyu Yan and Shuai Peng and Lin Du and Ziyin Zhang},
-  booktitle={ICDAR},
-  year={2021}
-}
-```   
